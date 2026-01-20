@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabbir Hossain — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f5f5f5;color:#333;overflow-x:hidden;scroll-behavior:smooth}
+.container{width:90%;max-width:1150px;margin:auto}
+header{position:sticky;top:0;z-index:100;background:#ffffff;box-shadow:0 2px 5px rgba(0,0,0,0.1);border-bottom:1px solid #e0e0e0}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-size:1.8rem;font-weight:800;color:#0a66f0}
+.nav-links a{margin-left:18px;color:#333;text-decoration:none;font-weight:600;transition:0.3s}
+.nav-links a:hover{color:#0e68f8}
+.btn,.resume-btn{display:inline-block;padding:12px 20px;border-radius:12px;font-weight:700;text-decoration:none;color:white;background:#0d6efd;box-shadow:0 0 8px rgba(0,0,0,.2);transition:.3s}
+.resume-btn{margin-left:18px}
+.btn:hover,.resume-btn:hover{transform:scale(1.05);background:#0056b3}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:25px;padding:60px 0;align-items:center;background:linear-gradient(135deg,#e0f7ff,#ffffff);border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,0.1);padding:60px 20px;margin-top:20px}
+.hero-text h1{font-size:3rem;font-weight:800;color:#0d6efd}
+.hero-text p{margin-top:18px;font-size:1.1rem;color:#555}
+.hero-text p strong{color:#0d6efd}
+.info-card{padding:20px;border-radius:14px;background:#ffffff;border:1px solid #e0e0e0;color:#333;text-align:left;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.contact-item{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:0.95rem;transition:0.3s}
+.contact-item .icon{font-size:1.1rem;color:#0d6efd;display:flex;align-items:center}
+.contact-item a{color:#0d6efd;text-decoration:none;font-weight:600}
+.contact-item:hover{color:#0056b3}
+.profile-img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:15px;border:3px solid #0d6efd;transition:0.3s}
+.profile-img:hover{transform:scale(1.05)}
+.section-title{margin-top:45px;text-align:center;font-size:2rem;font-weight:800;color:#0d6efd;position:relative}
+.section-title::after{content:'';width:60px;height:3px;background:#0d6efd;display:block;margin:8px auto;border-radius:3px}
+.skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:20px}
+.skill-card{padding:20px;background:#ffffff;border-radius:12px;color:#333;box-shadow:0 2px 6px rgba(0,0,0,.1);transition:0.3s}
+.skill-card:hover{transform:translateY(-5px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.skill-bar{background:#e0e0e0;border-radius:12px;overflow:hidden;margin-top:8px}
+.skill-level{height:12px;background:linear-gradient(90deg,#0d6efd,#0056b3);width:0;transition:width 1.2s ease-in-out;position:relative}
+.skill-percent{position:absolute;right:10px;top:-22px;font-size:0.8rem;color:#0d6efd;font-weight:600}
+.project-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:20px}
+.project{padding:18px;border-radius:12px;background:#ffffff;color:#333;box-shadow:0 2px 6px rgba(0,0,0,.1);transition:0.3s}
+.project:hover{transform:translateY(-5px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.contact{text-align:center;margin-top:40px}
+.contact-box{padding:25px;border-radius:12px;background:#ffffff;color:#333;box-shadow:0 2px 6px rgba(0,0,0,.1);display:inline-block;transition:0.3s}
+.contact-box:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+footer{background:#0d6efd;color:white;text-align:center;padding:25px 0;margin-top:40px}
+footer a{color:white;text-decoration:underline}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.skill-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<nav>
+<div class="logo">SabbirDev</div>
+<div class="nav-links">
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+<a class="resume-btn" href="https://github.com/AkmSabbirHossain/Resume_Of_MD_Sabbir_Hossain/blob/master/Resume_Of_MD_Sabbir_Hossain.pdf" download="Md_Sabbir_Hossain_Resume.pdf">⬇ Resume</a>
+</div>
+</nav>
+</div>
+</header>
+<div class="container hero">
+<div class="hero-text">
+<h1>Hi, I'm <br>Md Sabbir Hossain</h1>
+<p>Software Developer in .NET | Proficient in C#, ASP.NET Core, MVC, Web API, Angular & React</p>
+<p><strong>Professional Summary:</strong> .Net Developer proficient in C# and .NET, experienced in MVC and REST API development with SQL Server/Entity Framework, and committed to quickly mastering CI/CD, Docker, and clean code practices. <a href="https://github.com/AkmSabbirHossain" target="_blank">GitHub</a></p>
+<a class="btn" href="#projects">See My Projects</a>
+</div>
+<div class="info-card">
+  <img src="https://github.com/AkmSabbirHossain/GitHub_Protfolio/blob/master/Sabbir.jpeg?raw=true" alt="Md Sabbir Hossain" class="profile-img">
+<!-- Location -->
+<div class="contact-item">
+  <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 4.42 8 16 8 16s8-11.58 8-16c0-4.42-3.58-8-8-8zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+    </svg>
+  </span>
+  <span>Imannogor, Mirpur-13,Kafrul, Dhaka-1216</span>
+</div><!-- Email -->
+<div class="contact-item">
+  <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4z"/>
+      <path d="M0 5.383v6.234l5.803-3.482L0 5.383zm6.761 3.698L16 5.383v6.234l-5.803-3.482-3.436 2.06-3.436-2.06z"/>
+    </svg>
+  </span>
+  <span><a href="mailto:sabbirhossain958629@gmail.com">sabbirhossain958629@gmail.com</a></span>
+</div><!-- Phone -->
+<div class="contact-item">
+  <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M1.885.511a1.745 1.745 0 0 1 2.611.163L6.29 2.733c.329.346.445.84.304 1.286l-.547 1.914a.678.678 0 0 0 .178.693l2.457 2.457a.678.678 0 0 0 .693.178l1.914-.547a1.745 1.745 0 0 1 1.286.304l2.059 1.794a1.745 1.745 0 0 1 .163 2.611l-1.34 1.34c-.746.746-1.72 1.012-2.605.636a17.634 17.634 0 0 1-6.588-4.09A17.634 17.634 0 0 1 .875 4.455c-.376-.885-.11-1.859.636-2.605L1.885.511z"/>
+    </svg>
+  </span>
+  <span>+88 01732-387210</span>
+</div>
+  
+  <!-- GitHub icon instead of 💻 -->
+  <div class="contact-item">
+    <span class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.074.547-.174.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.727-.497.055-.487.055-.487.803.056 1.226.826 1.226.826.714 1.223 1.872.87 2.329.666.072-.518.28-.87.508-1.07-1.777-.202-3.644-.888-3.644-3.953 0-.873.31-1.588.823-2.15-.083-.203-.357-1.02.078-2.125 0 0 .672-.215 2.2.82a7.676 7.676 0 0 1 2-.27c.68.003 1.36.092 2 .27 1.527-1.035 2.197-.82 2.197-.82.437 1.105.163 1.922.08 2.125.513.562.822 1.277.822 2.15 0 3.073-1.87 3.748-3.65 3.946.288.247.544.733.544 1.478 0 1.07-.01 1.932-.01 2.193 0 .214.144.462.55.384C13.71 14.53 16 11.54 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </span>
+    <span><a href="https://github.com/AkmSabbirHossain" target="_blank">GitHub</a></span>
+  </div>
+
+ 
+<!-- LinkedIn -->
+<div class="contact-item">
+  <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.243c.837 0 1.357-.554 1.357-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.356.539-1.356 1.248 0 .694.519 1.248 1.327 1.248h.014zm4.908 8.243V9.359c0-.211.015-.423.077-.574.168-.423.55-.861 1.192-.861.841 0 1.177.649 1.177 1.601v3.916h2.401v-4.204c0-2.252-1.197-3.299-2.796-3.299-1.29 0-1.872.711-2.197 1.207h.015v-1.036h-2.401c.03.675 0 7.225 0 7.225h2.401z"/>
+    </svg>
+  </span>
+  <span><a href="https://www.linkedin.com/in/akm-sabbir-hossain" target="_blank">LinkedIn</a></span>
+</div></div>
+</div>
+
+<h2 class="section-title">🎓 Education</h2>
+<div class="container" style="display:flex;flex-direction:column;gap:15px;margin-top:15px;">
+  <div class="skill-card" style="padding:15px;display:block;"><strong>BBA</strong> <span style="float:right;">2023</span><br>Southern University Bangladesh</div>
+  <div class="skill-card" style="padding:15px;display:block;"><strong>HSC</strong> <span style="float:right;">2014</span><br>Dr. Yakub Sharif Degree College, Bauphal, Patuakhali</div>
+  <div class="skill-card" style="padding:15px;display:block;"><strong>SSC</strong> <span style="float:right;">2012</span><br>Bamnikati K.C.K Secondary School, Bauphal, Patuakhali</div>
+</div>
+
+<h2 class="section-title" id="skills">💎 Skills</h2>
+<div class="container skill-grid">
+  <div class="skill-card">C# (.NET / .NET Core)</div>
+  <div class="skill-card">ASP.NET Core, MVC, Web API</div>
+  <div class="skill-card">Entity Framework / EF Core</div>
+  <div class="skill-card">SQL Server</div>
+  <div class="skill-card">Angular, React, TypeScript</div>
+  <div class="skill-card">HTML5, CSS3, Bootstrap, JavaScript</div>
+  <div class="skill-card">Git, GitHub, Postman, Swagger</div>
+  <div class="skill-card">SAP Crystal Report</div>
+  <div class="skill-card">Object-Oriented Programming (OOP)</div>
+</div>
+
+<h2 class="section-title">💼 Professional Training</h2>
+<div class="container project-grid">
+<div class="project"><strong>IsDB-BISEW IT Scholarship Program (2025)</strong><br>Completed a one-year (788 hours) intensive software development training at US Software Ltd. Focused on hands-on projects using ASP.NET Core, .NET Core Web API, C#, MS SQL Server, Angular, React, Swagger. </div>
+</div>
+
+<h2 class="section-title" id="projects">🚀 Projects</h2>
+<div class="container project-grid">
+<div class="project"><strong>Online Book Shop (.NET Core MVC)</strong><br>Full CRUD operations using Entity Framework.<br>Technologies: ASP.NET MVC, C#, EF Core, SQL Server, Razor Views Engine</div>
+<div class="project"><strong>Weather Management System (Web API)</strong><br>Real-time weather data from third-party APIs.<br>Technologies: C#, ASP.NET, REST API, Postman</div>
+<div class="project"><strong>Hospital Management System (ASP.NET Web App)</strong><br>Manage patient info & medical tests using EF and SQL Server.<br>Technologies: ASP.NET Web App, C#, EF, SQL Server, Razor Views Engine</div>
+<div class="project"><strong>Business Management System (DDL, DML)</strong><br>Database-driven system with optimized SQL structures, stored procedures, and triggers.<br>Technologies: SQL Server (DDL, DML)</div>
+<div class="project"><strong>Chatting App (HTML, CSS, JavaScript, Node.js)</strong><br>Real-time chat app with WebSocket messaging.<br>Technologies: HTML, CSS, JavaScript, Node.js, WebSocket</div>
+<div class="project"><strong>E-Commerce Website Development (OnGoing)</strong><br>Full-stack e-commerce platform with product catalog, secure authentication, and checkout modules.<br>Technologies: C#, REST APIs, EF, SQL Server, Angular, React, HTML, CSS, TypeScript, Bootstrap</div>
+</div>
+
+<h2 class="section-title" id="contact">📬 Contact</h2>
+<div class="contact">
+<div class="contact-box">
+<p>Email: sabbirhossain958629@gmail.com</p>
+<p>GitHub: <a href="https://github.com/AkmSabbirHossain">github.com/AkmSabbirHossain</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/akm-sabbir-hossain" target="_blank">linkedin.com/in/akm-sabbir-hossain</a></p>
+</div>
+</div>
+
+<footer>
+<p>© <span id="year"></span> Md Sabbir Hossain | All Rights Reserved</p>
+<p>Designed with ❤️ by Md Sabbir Hossain</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.skill-level').forEach(el=>{
+    el.style.width=el.getAttribute('style').match(/width:(\d+)%/)[1]+ '%';
+  });
+});
+</script>
+</body>
+</html>
